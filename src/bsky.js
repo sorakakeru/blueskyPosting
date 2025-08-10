@@ -1,5 +1,4 @@
 const { AtpAgent, RichText } = require('@atproto/api')
-require('dotenv').config()
 
 async function postToBsky(text) {
   const agent = new AtpAgent({ service: 'https://bsky.social' })

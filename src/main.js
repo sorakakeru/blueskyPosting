@@ -1,6 +1,6 @@
 const { app, BrowserWindow, Menu, globalShortcut, ipcMain } = require('electron')
 const path = require('path')
-require('dotenv').config()
+require('dotenv').config({ path: `${__dirname}/../.env` })
 
 //アプリウインドウ
 function createWindow() {
@@ -49,14 +49,6 @@ app.setAboutPanelOptions({
     version: `electron@${process.versions['electron']}`, //macのみ
     iconPath: path.join(__dirname, 'icon.png'), //win,linux
   });
-
-//アプリ表示関連
-/*
-app.dock.hide();
-app.setLoginItemSettings({
-  openAtLogin: true,
-})
-*/
 
 //プロセス間通信
 ipcMain.handle('post-to-bluesky', async (e, text) => {
