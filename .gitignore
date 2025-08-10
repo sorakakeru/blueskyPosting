@@ -1,0 +1,7 @@
+.DS_Store
+.env
+_bk/
+app_icon/
+dist/
+node_modules/
+src/icon.png

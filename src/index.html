@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>blueskyPosting</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="drag_area"></div>
+<div class="wrapper">
+  <form id="postForm">
+    <p><label><textarea name="post" id="postCom" placeholder="ぶつぶつぶつ" required></textarea></label></p>
+    <p><button type="submit">つぶやく</button></p>
+  </form>
+  <p id="result"></p>
+</div>
+
+<script src="./renderer.js"></script>
+
+
+</body>
+</html>
