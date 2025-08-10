@@ -16,6 +16,7 @@ const menuTmpl = [
     ]
   },
   //{ role: 'fileMenu' },
+  { role: 'editMenu' },
   { role: 'help', submenu: [{ role: 'about' }] },
 ];
 
