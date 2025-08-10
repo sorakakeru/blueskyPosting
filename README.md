@@ -1,6 +1,6 @@
 # BlueskyPosting
 
-Blueskyにテキスト（もしくはURL）を投稿するだけのElectron製のシンプルなアプリ（のソースコード）です。コードに署名は入っていません。  
+Blueskyにテキスト（もしくはURL）を投稿するだけのElectron製のシンプルなアプリ（のソースコード）です。  
 Macメインですが、たぶんWindowsやLinuxでも動くはず。  
 
 ## 利用方法
