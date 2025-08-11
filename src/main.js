@@ -41,14 +41,14 @@ app.on('window-all-closed', () => {
 
 //アプリアバウト表示
 app.setAboutPanelOptions({
-    applicationName: app.name,
-    applicationVersion: process.platform === 'darwin'
-      ? app.getVersion()
-      : `v${app.getVersion()} (electron@${process.versions['electron']})`,
-    copyright: 'Copyright 2025 Yamatsu and more',
-    version: `electron@${process.versions['electron']}`, //macのみ
-    iconPath: path.join(__dirname, 'icon.png'), //win,linux
-  });
+  applicationName: app.name,
+  applicationVersion: process.platform === 'darwin'
+    ? app.getVersion()
+    : `v${app.getVersion()} (electron@${process.versions['electron']})`,
+  copyright: 'Copyright 2025 Yamatsu and more',
+  version: `electron@${process.versions['electron']}`, //macのみ
+  iconPath: path.join(__dirname, 'icon.png'), //win,linux
+});
 
 //プロセス間通信
 ipcMain.handle('post-to-bluesky', async (e, text) => {
