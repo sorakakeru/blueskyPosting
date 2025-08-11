@@ -9,10 +9,10 @@ const menuTmpl = [
     submenu: [
       {
         label: 'New Window',
-        accelerator: process.platform === 'darwin' ? 'Cmd+N' : 'Shift+N',
+        accelerator: isMac ? 'Cmd+N' : 'Shift+N',
         click: () => { createWindow() }
       },
-      process.platform === 'darwin' ? { role: 'close' } : { role: 'quit' }
+      isMac ? { role: 'close' } : { role: 'quit' }
     ]
   },
   //{ role: 'fileMenu' },
